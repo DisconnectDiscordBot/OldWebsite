@@ -1,0 +1,60 @@
+/* Preloader */
+.preload * {
+    -webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {}
+::-webkit-scrollbar-corner {}
+::-webkit-scrollbar-track {}
+::-webkit-scrollbar-thumb {}
+::-webkit-scrollbar-thumb:hover {}
+
+/* Alerts */
+.alert {}
+.alert i {}
+.alert-error {}
+.alert-success {}
+
+/* Cards */
+.card {}
+
+/* Buttons */
+.btn {}
+.btn:hover {}
+.btn-blurple {}
+
+/* Extras */
+.container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.contianer-limited {
+    margin: 0 auto;
+    overflow: auto;
+    max-width: 80%;
+    padding: 0 40px;
+}
+
+.flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-column {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid {}
+.grid-3 {}
