@@ -1,6 +1,6 @@
 /* Preloader */
 .preload * {
-    -webkit-transition: none !important;
+	-webkit-transition: none !important;
 	-moz-transition: none !important;
 	-ms-transition: none !important;
 	-o-transition: none !important;
@@ -8,53 +8,69 @@
 }
 
 /* Scroll Bar */
-::-webkit-scrollbar {}
-::-webkit-scrollbar-corner {}
-::-webkit-scrollbar-track {}
-::-webkit-scrollbar-thumb {}
-::-webkit-scrollbar-thumb:hover {}
+::-webkit-scrollbar {
+	width: 12px;
+	height: 8px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+	-webkit-border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+	border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 10px;
+	background: #202024;
+	background-clip: padding-box;
+	-webkit-border-radius: 100px;
+	border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	width: 10px;
+	background: #19191c;
+	background-clip: padding-box;
+	-webkit-border-radius: 100px;
+	border: 2px solid transparent;
+}
 
 /* Alerts */
-.alert {}
-.alert i {}
-.alert-error {}
-.alert-success {}
+
+/* Containers */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+/* Flex Styles */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Grid Styles */
+.grid {
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /* Cards */
-.card {}
-
-/* Buttons */
-.btn {}
-.btn:hover {}
-.btn-blurple {}
-
-/* Extras */
-.container {
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-.contianer-limited {
-    margin: 0 auto;
-    overflow: auto;
-    max-width: 80%;
-    padding: 0 40px;
-}
-
-.flex {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-}
-.flex-column {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.grid {}
-.grid-3 {}

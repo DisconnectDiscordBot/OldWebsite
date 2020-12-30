@@ -1,101 +1,246 @@
-/* Imported */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* Colors */
 :root {
-    --primary-color: #202024;
-    --secondary-color: #292a2e;
-    --primary-text: #ffffff;
-    --secondary-text: #00ff00;
-    --error-color: #fff;
-    --success-color: #fff;
-    --notes-color: #fff;
-    
+	--primary-color: #202024;
+	--secondary-color: #292a2e;
+	--grey-text: #c9ccd6;
+    --error-color: #fc4747;
+    --notes-color: #414147;
 }
 
-/* Normal Elements */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    box-sizing: border-box;
-    color: var(--primary-text);
-    font-family: 'Lato', sans-serif;
+/* Text Elements */
+a, p {
+    text-decoration: none;
+    color: var(--grey-text);
 }
 
 ul, ol {
     list-style-type: none;
 }
 
-a, p {
-    text-decoration: none;
-    color: var(--secondary-text);
+/* Buttons */
+
+/* Extra Styles */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.grey {
+    color: var(--grey-text)
 }
 
 /* Code */
-code, pre {
+pre, code {
     color: #f55742;
     padding: 1px 3px;
     border-radius: 5px;
     background-color: #333333;
 }
 
-/* Nav */
-.navbar {
-    height: 70px;
-    overflow: hidden;
-    background-color: var(--primary-color);
+/* HTML and BODY styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
-.navbar a, .navbar p {
-    margin: 0 0;
-    padding: 0 10px;
-    transition: all 200ms;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+}
+
+/* Nav Bar */
+.navbar .mobile {
+	display: none;
+}
+
+.navbar {
+	background-color: var(--primary-color);
+	color: #fff;
+	height: 70px;
+	overflow: hidden;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar a {
+	padding: 10px;
+	margin: 0 0;
+	padding: 0px 10px;
+	transition: all 500ms;
 }
 
 .navbar a:hover {
-    color: var(--primary-text);
-    font-weight: 500;
-    font-size: 1.30;
-    font-size-adjust: 5px;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 1.05rem;
+	font-size-adjust: 5px;
 }
 
 .navbar .currentPage {
-    color: var(--primary-text);
-    font-size-adjust: 5px;
+	color: #ffffff;
+	font-size-adjust: 5px;
 }
 
 .navbar .flex {
-    justify-content: space-between;
+	justify-content: space-between;
+}
+
+.navbar .logo {
+	margin: 10px;
 }
 
 .navbar .logo img {
-    height: 75%;
-    margin: auto 5px;
+	height: 75%;
+	margin: auto 5px;
 }
 
-/* Tablet */
+.navbar .logo h3 {
+	font-weight: 400;
+	font-size: 1.5rem;
+	padding: 0 2px;
+	color: #ffffff;
+}
+
+.navbar .divider {
+	width: 2px;
+	height: 50%;
+	background-color: var(--grey-text);
+	opacity: 0.125;
+	margin: auto 5px;
+}
+
+.navbar .dropdown {
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+/* Mobile Responsive Nav Bar */
 @media (max-width: 768px) {
-    .navbar {
-        height: auto;
-        overflow: hidden;
-    }
+	.navbar,
+	.container {
+		width: auto;
+	}
     
-    .navbar .logo {
-        margin: 10px 0 0 0;
-    }
+    .container-limited {
+		max-width: 1500px;
+	}
     
-    .navbar .logo img {
-        height: 30px; 
-        width: 30px;
-        margin: auto 25px;
-    }
-    
-    
+	/* Nav Bar*/
+	.navbar {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.navbar .flex .logo {
+		margin: 10px 0px 0px 0px;
+		flex-direction: row;
+	}
+
+	.navbar .logo img {
+		height: 30px;
+		width: 30px;
+		margin: auto 5px;
+	}
+
+	.navbar .logo h3 {
+		font-size: 25px;
+	}
+
+	.divider {
+		display: none;
+	}
+
+	.navbar .flex {
+		flex-direction: column;
+	}
+
+	.navbar ul {
+		padding: 10px;
+		margin: 0px 10px;
+	}
+
+	.navbar ul li {
+		margin: 0px 5px;
+	}
+
+	.navbar .desktop {
+		display: none;
+	}
+
+	.navbar .mobile {
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: auto;
+		width: auto;
+	}
+
+	.navbar .mobile .flex {
+		flex-direction: row;
+	}
 }
 
-/* Phone */
+@media (max-width: 550px) {
+	::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+	}
+
+    .navbar .mobile {
+		display: block;
+        width: auto;
+	}
+    .navbar .mobile ul li{
+		font-size: 13px;
+	}
+    
+    .navbar .mobile .flex {
+		flex-direction: row;
+        flex-wrap: wrap;
+	}
+}
