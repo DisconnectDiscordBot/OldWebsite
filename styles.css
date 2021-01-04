@@ -1,0 +1,47 @@
+/* Utilities */
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    animation: rotation 10s linear infinite;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 5px;
+    color: white;
+}
+
+
+
+.coming-soon {
+    position: absolute;
+    height: 99%;
+    width: 99%;
+}
