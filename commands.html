@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta data-n-head='ssr' charset="utf-8">
+    <meta data-n-head='ssr' name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Head Information -->
+    <title>Disconnect - Commands</title>
+    <link data-n-head='ssr' rel='icon' type='image/x-icon' href='assets/disconnect.ico'>
+
+    <!-- Styles -->
+    <link type='text/css' rel='stylesheet' href='styles/utilities.css'>
+    <link type='text/css' rel='stylesheet' href='styles/common.css'>
+    <link type='text/css' rel='stylesheet' href='styles/commands.css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous">
+
+    <!-- Meta -->
+    <meta data-n-head='ssr' data-hid='theme-color' name='theme-color' content='#8f45d9'>
+    <meta data-n-head='ssr' data-hid='og:type' name='og:type' content='website'>
+    <meta data-n-head='ssr' data-hid='og:title' name='og:title' content='Disconnect - Commands'>
+    <meta data-n-head='ssr' data-hid='og:url' name='og:url' content='https://disconnectbot.com/commands.html'>
+    <meta data-n-head='ssr' data-hid='og:image' name='og:image'
+        content='https://disconnectbot.com/assets/disconnect.png'>
+    <meta data-n-head='ssr' data-hid='description' name='description'
+        content='View all the Disconnect commands in one place. Except for the bot it self this is the most up to date list you can find!'>
+    <meta data-n-head='ssr' data-hid='og:description' name='og:description'
+        content='Disconnect is a multi-purpose discord bot. Built with love and entertainment in mind to keep your discord members busy and active. But it does not stop there...'>
+
+</head>
+
+<body style='background-color: #292a2e'>
+    <!-- Preloader -->
+
+    <body class='preload'></body>
+
+    <!-- Header -->
+    <div class='navbar'>
+        <div class='container full flex'>
+            <a href='/' class='logo flex'>
+                <img src='assets//disconnect.png' alt='Disconnect Logo'>
+                <p class='title'>Disconnect</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a class='button currentPage' href='commands.html'><span>Commands</span></a></li>
+                    <li><a class='button' href='docs.html'><span>Information</span></a></li>
+                    <li><a class='button' href='premium.html'><span>Premium</span></a></li>
+                    <li><a class='button' href='invite.html'><span>Invite</span></a></li>
+                    <li><a class='button' href='support.html'><span>Support</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Notes -->
+    <div class='notes card'>
+        <div class='container full grid'>
+            <div class='commandPrefix'>
+                <h2>COMMAND PREFIX</h2>
+                <div class='flex'>
+                    <p>The default prefix is </p>
+                    <pre><code> ! </code></pre>
+                </div>
+                <div class='flex pop'>
+                    <p>To find a guilds prefix mention </p>
+                    <pre><code> @Disconnect#2622 </code></pre>
+                </div>
+                <div class='flex'>
+                    <p>Command Example: </p>
+                    <pre><code>!help</code></pre>
+                </div>
+            </div>
+            <div class='commandSyntax'>
+                <h2>COMMAND SYNTAX</h2>
+                <p><i>(Please do not include these when typing commands)</i></p>
+
+                <div class='flex'>
+                    <pre><code> [] </code></pre>
+                    <p>- Optional paramater</p>
+                </div>
+                <div class='flex'>
+                    <pre><code> <> </code></pre>
+                    <p>- Required parameter</p>
+                </div>
+                <div class='flex pop'>
+                    <pre><code> < thing1 || thing2 > </code></pre>
+                    <p>- Select an option inside</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commands -->
+    <div class='category flex'>
+        <div class='container full accordion'>
+            <div class='card commands'>
+                <div id='funContainer'>
+                    <input type='checkbox' id='fun' class='accordion_input'>
+                    <label for='fun' class='accordion_label'>Fun</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='advice' class='accordion_input'>
+                            <label for='advice' class='accordion_label'>Advice</label>
+                            <div class='content'>
+                                <p>Get some random advice from Disconnect.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='coinFlip' class='accordion_input'>
+                            <label for='coinFlip' class='accordion_label'>Coin Flip</label>
+                            <div class='content flex container full'>
+                                <p>Flip a coin. Will it land on heads? or tails?</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>coin-flip</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='dadJoke' class='accordion_input'>
+                            <label for='dadJoke' class='accordion_label'>Dad Joke</label>
+                            <div class='content'>
+                                <p>Want to hear a punny dad joke? I got a few you might like!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>dad-joke</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>dad</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='fact' class='accordion_input'>
+                            <label for='fact' class='accordion_label'>Fact</label>
+                            <div class='content'>
+                                <p>Fun Fact: This command is all about facts!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>fact</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>fun-fact</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='meme' class='accordion_input'>
+                            <label for='meme' class='accordion_label'>Meme</label>
+                            <div class='content'>
+                                <p>Get some funny memes off of Reddit!</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='rps' class='accordion_input'>
+                            <label for='rps' class='accordion_label'>Rock Paper Scissors</label>
+                            <div class='content'>
+                                <p>Rock! Paper! Scissors! Says..! SHOOT!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>rock-paper-scissors [rock || paper || scissors]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>rock-paper-scissors rock</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>fun-fact</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='rd' class='accordion_input'>
+                            <label for='rd' class='accordion_label'>Roll Dice</label>
+                            <div class='content'>
+                                <p>Roll a pair of dice and get your results.</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>roll-dice</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>roll</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='rr' class='accordion_input'>
+                            <label for='rr' class='accordion_label'>Russian Roulette</label>
+                            <div class='content'>
+                                <p>1/6 Chance to survive? Will you spin the barrel?</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>russian-roulette</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='shower' class='accordion_input'>
+                            <label for='shower' class='accordion_label'>Shower Thought</label>
+                            <div class='content'>
+                                <p>What do you think about in the shower?</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>shower-thought</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>shower</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='slots' class='accordion_input'>
+                            <label for='slots' class='accordion_label'>Slots</label>
+                            <div class='content'>
+                                <p>Can you get three in a row to win?</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='8ball' class='accordion_input'>
+                            <label for='8ball' class='accordion_label'>8 Ball</label>
+                            <div class='content'>
+                                <p>What does the 8-ball predict?</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>8-ball < question ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>8-ball Will Disconnect continue to grow?</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>roll</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='imagesContainer'>
+                    <input type='checkbox' id='images' class='accordion_input'>
+                    <label for='images' class='accordion_label'>Images</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='mcAchive' class='accordion_input'>
+                            <label for='mcAchive' class='accordion_label'>Minecraft Achievement</label>
+                            <div class='content'>
+                                <p>Create your own minecraft achievement!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>achievement < text ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>achievement Using Disconnect</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>mc</code></pre>
+                                    <pre><code>minecraft</code></pre>
+                                    <pre><code>minecraft-achievement</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='animal' class='accordion_input'>
+                            <label for='animal' class='accordion_label'>Animal</label>
+                            <div class='content'>
+                                <p>Get a random picture and fact about an animal (Currently supporting only Koalas,
+                                    Panda, and Birds</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='cat' class='accordion_input'>
+                            <label for='cat' class='accordion_label'>Cat</label>
+                            <div class='content'>
+                                <p>Get a random picture and fact of a cat.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='dog' class='accordion_input'>
+                            <label for='dog' class='accordion_label'>Dog</label>
+                            <div class='content'>
+                                <p>Get a random picture and fact of a dogs.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='food' class='accordion_input'>
+                            <label for='food' class='accordion_label'>Food</label>
+                            <div class='content'>
+                                <p>Get a random picture of anime food/ coffee.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='fox' class='accordion_input'>
+                            <label for='fox' class='accordion_label'>Fox</label>
+                            <div class='content'>
+                                <p>Get a random picture and fact of a fox.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='rpContainer'>
+                    <input type='checkbox' id='rp' class='accordion_input'>
+                    <label for='rp' class='accordion_label'>Roleplay</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='boop' class='accordion_input'>
+                            <label for='boop' class='accordion_label'>Boop</label>
+                            <div class='content'>
+                                <p>Boop another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>boop [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='feed' class='accordion_input'>
+                            <label for='feed' class='accordion_label'>Feed</label>
+                            <div class='content'>
+                                <p>Feed another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>feed [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='fistBump' class='accordion_input'>
+                            <label for='fistBump' class='accordion_label'>Fist Bump</label>
+                            <div class='content'>
+                                <p>Fist bump another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>fist-bump [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='highFive' class='accordion_input'>
+                            <label for='highFive' class='accordion_label'>High Five</label>
+                            <div class='content'>
+                                <p>High five another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>high-five [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='hug' class='accordion_input'>
+                            <label for='hug' class='accordion_label'>Hug</label>
+                            <div class='content'>
+                                <p>Hug another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>hug [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='kiss' class='accordion_input'>
+                            <label for='kiss' class='accordion_label'>Kiss</label>
+                            <div class='content'>
+                                <p>Kiss another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>kiss [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='nuzzle' class='accordion_input'>
+                            <label for='nuzzle' class='accordion_label'>Nuzzle</label>
+                            <div class='content'>
+                                <p>Nuzzle with another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>nuzzle [member]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>cuddle</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='pat' class='accordion_input'>
+                            <label for='pat' class='accordion_label'>Pat</label>
+                            <div class='content'>
+                                <p>Pat another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>pat [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='poke' class='accordion_input'>
+                            <label for='poke' class='accordion_label'>Poke</label>
+                            <div class='content'>
+                                <p>Poke another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>poke [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='punch' class='accordion_input'>
+                            <label for='punch' class='accordion_label'>Punch</label>
+                            <div class='content'>
+                                <p>Punch another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>Punch [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='slap' class='accordion_input'>
+                            <label for='slap' class='accordion_label'>Slap</label>
+                            <div class='content'>
+                                <p>Slap another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>slap [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='tickle' class='accordion_input'>
+                            <label for='tickle' class='accordion_label'>Tickle</label>
+                            <div class='content'>
+                                <p>Tickle another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>tickle [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='wink' class='accordion_input'>
+                            <label for='wink' class='accordion_label'>Wink</label>
+                            <div class='content'>
+                                <p>Wink another member!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>wink [member]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='infoContainer'>
+                    <input type='checkbox' id='info' class='accordion_input'>
+                    <label for='info' class='accordion_label'>Information</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='botinfo' class='accordion_input'>
+                            <label for='botinfo' class='accordion_label'>Bot Info</label>
+                            <div class='content'>
+                                <p>This command gives you a little bit of info one me. But why use the bot when your
+                                    already here? Check out the bot info on the Information page!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>bot-info</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='emoji' class='accordion_input'>
+                            <label for='emoji' class='accordion_label'>Emojis</label>
+                            <div class='content'>
+                                <p>Want information on an emoji or want a list of all emojis on your guild?</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>emojis [emoji id]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example:</h4>
+                                    <pre><code>emojis 795353967852519434</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='guildinfo' class='accordion_input'>
+                            <label for='guildinfo' class='accordion_label'>Guild Information</label>
+                            <div class='content'>
+                                <p>Get information on your guild.</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>guild-info</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='ri' class='accordion_input'>
+                            <label for='ri' class='accordion_label'>Role Information</label>
+                            <div class='content'>
+                                <p>Get information on a role.</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>role-info [role]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example:</h4>
+                                    <pre><code>role-info 713812465728749619</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='ui' class='accordion_input'>
+                            <label for='ui' class='accordion_label'>User Information</label>
+                            <div class='content'>
+                                <p>Get information on a user.</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>user-info [user]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example:</h4>
+                                    <pre><code>user-info @Cytech#2622</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='textModContainer'>
+                    <input type='checkbox' id='textMod' class='accordion_input'>
+                    <label for='textMod' class='accordion_label'>Text Modification</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='ftext' class='accordion_input'>
+                            <label for='ftext' class='accordion_label'>Flip Text</label>
+                            <div class='content'>
+                                <p>Hey, why is my text upside down?</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>flip-text < text ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>flip-text This text is the right way up!</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='owo' class='accordion_input'>
+                            <label for='owo' class='accordion_label'>Owoify</label>
+                            <div class='content'>
+                                <p>This command makes youw text owo-ified ;;w;;</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>owoify < text ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>owoify This text is not owoified... yet!</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>owoify-text</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='reverse' class='accordion_input'>
+                            <label for='reverse' class='accordion_label'>Reverse</label>
+                            <div class='content'>
+                                <p>This command makes your text the wrong way around!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>reverse < text ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>reverse !dexif eb ot sdeen txet sihT</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>reverse-text</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='yoda' class='accordion_input'>
+                            <label for='yoda' class='accordion_label'>Yodish</label>
+                            <div class='content'>
+                                <p>This command fixes your sentences. They Yoda way!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>yodish < text ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>yodish Yoda is the grand master. Yes.</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>yoda</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='modContainer'>
+                    <input type='checkbox' id='mod' class='accordion_input'>
+                    <label for='mod' class='accordion_label'>Moderation</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='ban' class='accordion_input'>
+                            <label for='ban' class='accordion_label'>Ban</label>
+                            <div class='content'>
+                                <p>Ban a user from your server!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>ban < member ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>ban @Mee6#4876</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Required Permissions: </h4>
+                                    <pre><code>Ban Members</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='kick' class='accordion_input'>
+                            <label for='kick' class='accordion_label'>Kick</label>
+                            <div class='content'>
+                                <p>kick a user from your server!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>kick < member ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>kick @Mee6#4876</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Required Permissions: </h4>
+                                    <pre><code>Kick Members</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='purge' class='accordion_input'>
+                            <label for='purge' class='accordion_label'>Purge</label>
+                            <div class='content'>
+                                <p>Purge/ delete a group of messages! (<i>max of 100 messages</i>)</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>purge < amount ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>purge 100</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Required Permissions: </h4>
+                                    <pre><code>Manage Messages</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>clear</code></pre>
+                                    <pre><code>bulk-delete</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='prefix' class='accordion_input'>
+                            <label for='prefix' class='accordion_label'>Change Prefix</label>
+                            <div class='content'>
+                                <p>Change your guilds prefix.</i>)</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>set-prefix < prefix ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>prefix ?</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Required Permissions: </h4>
+                                    <pre><code>Manage Guild</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>change-prefix</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='nsfwContainer'>
+                    <input type='checkbox' id='nsfw' class='accordion_input'>
+                    <label for='nsfw' class='accordion_label'>Not Safe For Work</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='p18' class='accordion_input'>
+                            <label for='p18' class='accordion_label'>Porn</label>
+                            <div class='content'>
+                                <p>🔞 Get random images from multiple categories including: boos, ass, and pussy</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='h18' class='accordion_input'>
+                            <label for='h18' class='accordion_label'>Hentai</label>
+                            <div class='content'>
+                                <p>🔞 Get random anime images from multiple categories including: boos, ass, and hentai
+                                </p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='r34' class='accordion_input'>
+                            <label for='r34' class='accordion_label'>Rule 34</label>
+                            <div class='content'>
+                                <p>🔞 Search Rule 34 for porn.</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>rule-34 [search]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>rule-34 hello</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>r-34</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='utilsContainer'>
+                    <input type='checkbox' id='utils' class='accordion_input'>
+                    <label for='utils' class='accordion_label'>Utilities</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='avatar' class='accordion_input'>
+                            <label for='avatar' class='accordion_label'>Avatar</label>
+                            <div class='content'>
+                                <p>Get another members profile picture!</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>avatar [member]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>avatar @Disconnect#2622</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>pfp</code></pre>
+                                    <pre><code>profile-picture</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='invite' class='accordion_input'>
+                            <label for='invite' class='accordion_label'>Invite</label>
+                            <div class='content'>
+                                <p>Get invite information for Disconnect! Like <a href='invite.html'>Invite
+                                        Disconnect</a> or <a href='support.html'>Join the Disconnect Support Server</a>!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class='footer'>
+        <div class='container full grid'>
+            <div class='branding'>
+                <h4>Disconnect</h4>
+                <p>Copyright &copy; 2021 Disconnect</p>
+            </div>
+            <div class='flex'>
+                <div class='footernav'>
+                    <ul>
+                        <li><a class='button' href='/'><span>Home</span></a></li>
+                        <li><a class='button' href='commands.html'><span>Commands</span></a></li>
+                        <li><a class='button' href='docs.html'><span>Information</span></a></li>
+                    </ul>
+                </div>
+                <div class='footernav'>
+                    <ul>
+                        <li><a class='button' href='premium.html'><span>Premium</span></a></li>
+                        <li><a class='button' href='support.html'><span>Support Server</span></a></li>
+                        <li><a class='button' href='invite.html'><span>Invite Disconnect</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script>$(window).load(function () { 'body'.removeClass('.preload'); });</script>
+</body>
+
+</html>

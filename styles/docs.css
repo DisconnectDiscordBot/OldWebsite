@@ -1,0 +1,58 @@
+a {
+	color: var(--purple);
+}
+
+a:hover {
+	color: var(--light-purple);
+}
+
+h2,
+h3 {
+	text-align: center;
+}
+
+/* Quick Start */
+.quickstart ol {
+	margin: 5px 25px;
+	padding: 5px;
+	color: #ffffff;
+}
+
+.quickstart ol li {
+	list-style-type: decimal;
+}
+
+/* About */
+.about p {
+	text-indent: 25px;
+}
+
+/* Changelog */
+.changelog {
+	text-align: center;
+}
+
+.changelog ul li {
+	text-align: left;
+	list-style-type: disc;
+}
+
+/* Developers */
+.devs {
+	text-align: center;
+}
+
+.devs .card {
+	background-color: var(--primary-color);
+}
+
+.devs i {
+	margin: 5px;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+	.quickstart .flex {
+		flex-direction: column;
+	}
+}
