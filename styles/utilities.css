@@ -1,0 +1,100 @@
+/* Text */
+ul,
+li {
+	list-style-type: none;
+}
+
+a,
+p {
+	text-decoration: none;
+	color: var(--grey-text);
+}
+
+pre {
+	background: #26292e;
+	padding: 1px 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+	color: #f75f54;
+	border: #000000 1px solid;
+	font-family: 'Courier New', monospace;
+	white-space: pre-wrap;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 8px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+	-webkit-border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+	border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 10px;
+	background: #202024;
+	background-clip: padding-box;
+	-webkit-border-radius: 100px;
+	border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	width: 10px;
+	background: #19191c;
+	background-clip: padding-box;
+	-webkit-border-radius: 100px;
+	border: 2px solid transparent;
+}
+
+/* Containers */
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.full {
+	max-width: 100%;
+}
+
+/* Grid */
+.grid {
+	height: 100%;
+	display: grid;
+	grid-gap: 20px;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+grid-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+/* Flex */
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* Cards */
+.card {
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
+	width: auto;
+}

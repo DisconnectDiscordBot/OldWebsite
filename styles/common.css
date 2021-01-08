@@ -1,0 +1,261 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Body */
+:root {
+    --primary-color: #292a2e;
+	--secondary-color: #202024;
+	--grey-text: #c9ccd6;
+    --error-color: #fc4747;
+    --purple: #663399;
+    --light-purple: #8f45d9;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primary-color);
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: var(--secondary-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.btn-blurple {
+    background-color: #7289DA;
+}
+
+.btn i {
+    top: 3px;
+    font-size: 125%;
+    margin: 0 4px 0 0;
+    position: relative;
+}
+
+/* Nav Bar */
+.navbar {
+    color: #ffffff;
+    height: 70px;
+    font-weight: 400;
+    background-color: var(--secondary-color);
+    border-bottom: var(--purple) 5px solid;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--grey-text);
+    padding: 10px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+.navbar .currentPage,
+.navbar .currentPage:hover {
+    color: var(--light-purple);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+} 
+
+.navbar .logo {
+    margin: 0 10px;
+}
+
+.navbar .logo img {
+    height: 75%;
+    margin: auto 5px;
+}
+
+.navbar .logo p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0 2px;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    border-top: var(--purple) 5px solid;
+    padding: 30px;
+    height: 200px;
+    background-color: var(--secondary-color);
+}
+
+.footer h4 {
+    color: var(--light-purple);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.footer .flex {
+    justify-content: flex-end;
+}
+
+.footer .footernav {
+    margin: 0 25px;
+}
+
+.footernav a:hover {
+    color: #ffffff;
+}
+
+/* Animations */
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s
+}
+
+.button span:after {
+    font-size: 25px;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        font-size: 1.05rem;
+    }
+    
+    .navbar ul {
+        margin: 0 0 15px 0;
+    }
+    
+    .navbar .flex {
+        flex-direction: column;
+    }
+    
+    .navbar .logo {
+        margin: 10px 0 5px 0;
+        flex-direction: row;
+    }
+    
+    .navbar .logo p {
+        font-size: 1.5rem;
+    }
+    
+    .navbar .logo img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+    
+    .navbar .logo:active ul{
+        display: block;
+    }
+    
+    .navbar ul {
+        margin: 0 0 15px 0;
+    }
+    
+    .navbar .flex {
+        flex-direction: column;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar li {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+    
+    .navbar .logo {
+        margin: 10px 0 5px 0;
+        flex-direction: row;
+    }
+    
+    .navbar .logo p {
+        font-size: 1.5rem;
+    }
+    
+    .navbar .logo img {
+        height: 50px;
+    }
+    
+    .footer {
+        height: auto;
+    }
+    
+    .footer .branding p,
+    .footer .branding h4 {
+        text-align: center;
+    }
+    
+    .footer .grid {
+        grid-template-columns: 1fr;
+		grid-template-rows: 1fr; 
+    }
+    
+    .footer .flex {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .footer .flex ul {
+        text-align: center;;=
+    }
+    
+    .footer li {
+        margin: 5px 0;
+    }
+}
