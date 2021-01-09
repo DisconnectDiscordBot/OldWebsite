@@ -1,0 +1,185 @@
+a {
+	color: var(--purple);
+}
+
+a:hover {
+	color: var(--light-purple);
+}
+
+pre,
+code {
+	font-family: 'Courier New', monospace;
+}
+
+/* Notes */
+.notes {
+	margin: 25px 50px;
+}
+
+.notes .grid h2 {
+	font-weight: 400;
+	border-bottom: 2px solid;
+}
+
+.notes .flex {
+	margin: 10px 0;
+	font-size: 14px;
+	justify-content: flex-start;
+}
+
+.notes p {
+	font-size: 14;
+}
+
+.commandPrefix,
+.commandSyntax {
+	height: 100%;
+}
+
+.notes .flex {
+	height: auto;
+}
+
+/* Accordion */
+.accordion {
+	overflow: hidden;
+	width: 100%;
+}
+
+.acordion_label,
+.content {
+	padding: 10px;
+}
+
+.accordion_label {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.accordion_label:hover {
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion_label::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	width: 12px;
+	height: 6px;
+	background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+	background-size: contain;
+	transition: transform 0.4s;
+}
+
+.content {
+	display: none;
+}
+
+.accordion_input {
+	display: none;
+}
+
+.accordion_input:checked ~ .accordion_label {
+	border-bottom: var(--light-purple) 2px solid;
+}
+
+.accordion_input:checked ~ .content {
+	display: inline-block;
+}
+
+.accordion_input:checked ~ .accordion_label::after {
+	transform: translateY(-50%) rotate(0.5turn);
+}
+
+.commands .card {
+	padding: 5px 10px;
+	background-color: var(--primary-color);
+}
+
+/* Command Content */
+.commands .usage {
+	margin: 5px 0;
+	justify-content: flex-start;
+}
+
+.commands .usage h4 {
+	font-weight: 400;
+	padding-right: 5px;
+	color: var(--grey-text);
+	text-transform: uppercase;
+}
+
+.commands pre {
+	margin: 0;
+	color: var(--grey-text);
+}
+
+.commands pre,
+.commands code {
+	width: auto;
+}
+
+.commands p {
+	color: #ffffff;
+}
+
+@media (max-width: 987px) {
+	.notes .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.notes {
+		padding: 10px;
+	}
+
+	.notes .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.notes p,
+	.notes pre {
+		font-size: 12px;
+	}
+
+	.notes h2 {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 550px) {
+	.notes .pop {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 450px) {
+	pre,
+	code {
+		font-size: 12px;
+	}
+
+	label,
+	p,
+	h4 {
+		font-size: 14px;
+	}
+
+	.commands p {
+		text-align: center;
+	}
+
+	.commands .flex {
+		flex-direction: column;
+	}
+}
