@@ -2,6 +2,14 @@ a {
 	color: var(--purple);
 }
 
+.footernav a {
+    color: var(--grey-text);
+}
+
+.footernav a:hover {
+    color: #ffffff;
+}
+
 a:hover {
 	color: var(--light-purple);
 }
