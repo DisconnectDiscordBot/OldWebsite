@@ -27,6 +27,7 @@ pre {
 	height: 8px;
 	border: 2px solid transparent;
 	background-clip: padding-box;
+	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	background-color: rgba(0, 0, 0, 0.1);
 }
@@ -43,6 +44,7 @@ pre {
 	width: 10px;
 	background: #202024;
 	background-clip: padding-box;
+	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border: 2px solid transparent;
 }
@@ -51,6 +53,7 @@ pre {
 	width: 10px;
 	background: #19191c;
 	background-clip: padding-box;
+	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border: 2px solid transparent;
 }
